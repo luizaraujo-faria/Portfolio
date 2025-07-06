@@ -24,6 +24,8 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'quotes': ['error', 'single', 'template'], // força uso de aspas simples
+      'semi': ['off'],               // permite uso opcional do ponto e vírgula
     },
   },
 ])
