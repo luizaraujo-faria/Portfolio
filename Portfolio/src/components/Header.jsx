@@ -23,7 +23,7 @@ const Header = () => {
     return <header className="w-full h-28 fixed z-40 bg-linear-to-t from-b to-95% to-black from-5% from-transparent flex items-center justify-center p-5">
 
         <div className='flex items-center'>
-            <img src="../public/Logo.svg" className="size-20" alt="Logotipo-Luiz" />
+            <img src="./public/Logo.svg" className="size-20" alt="Logotipo-Luiz" />
 
             {/* <nav >
                 <ul className="w-fit flex gap-5 text-primary text-base font-light dark:text-black">
