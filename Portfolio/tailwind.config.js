@@ -10,12 +10,15 @@ export default {
         secondary: '#d3b561',
         tertiary: '#c0a450',
         quaternary: '#070707',
-        quintenary: '#f3f3f3bb',
+        quintenary: '#f5f5f5',
         sextenary: '#4a2512'
       },
       fontFamily: {
         cinzel: ['Cinzel, serif'],
         afacad: ['Afacad Flux, sans-serif'],
+      },
+      transitionTimingFunction: {
+        'custom-ease': 'cubic-bezier(0.5, 1.6, 0.4, 0.7)',
       },
       animation: {
         'spin': 'spinbar .7s linear infinite',
