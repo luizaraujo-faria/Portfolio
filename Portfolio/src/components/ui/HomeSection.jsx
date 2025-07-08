@@ -9,7 +9,7 @@ const HomeSection = () => {
 
             <div className="flex flex-col">
                 <h2 className="text-white text-xl font-light md:text-3xl">E sou <span className="text-secondary">Desenvolvedor</span> de <span className="text-secondary">Software</span>.</h2>
-                <hr className="w-1/4 ml-36 bg-white border-white md:ml-64"/>
+                <hr className="w-1/4 ml-36 bg-white border-white md:ml-60"/>
             </div>
         </article>
 

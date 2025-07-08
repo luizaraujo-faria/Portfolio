@@ -9,8 +9,8 @@ export default {
         primary: '#ecce7a',
         secondary: '#d3b561',
         tertiary: '#c0a450',
-        quaternary: '#ad923f',
-        quintenary: '#99812d',
+        quaternary: '#070707',
+        quintenary: '#f3f3f3bb',
         sextenary: '#4a2512'
       },
       fontFamily: {
