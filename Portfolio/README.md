@@ -1,12 +1,44 @@
-# React + Vite
+# Portfólio de Luiz Henrique Araujo Farias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- WebSite pessoal com propósito profissional e informativo sobre min, com foco apenas em informações essenciais 
+  sobre meus conhecimentos, projetos, serviços, formação acadêmica, redes sociais e meios de contato.
 
-Currently, two official plugins are available:
+# Estrutura do Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Página inicial para introdução prévia e receber os usuários, constituída por links de navegação dentro do site,
+  links para redes sociais e configuração de tema.
 
-## Expanding the ESLint configuration
+- Página principal - contém todo o conteúdo principal do site, todas as informações sobre min.
+  
+  ├── Sessão "Sobre" - Apresentação pessoal, habilidades técnicas e curriculo( CV ).
+  ├── Sessão "Portfólio" - ( Em desenvolvimento ).
+  ├── Sessão "Contato" - ( Em desenvolvimento ).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Técnologias
+
+- React.js (JavaScript)
+- TailwindCSS
+- HTML5
+- Git
+- Vite
+- ESLint
+
+# Pastas
+
+- Portfolio/ - Pasta mãe.
+
+    ├── src/ - Arquivos principais do projeto.
+
+        ├── assets/ - Arquivos de mídia (Imagens, icones, etc...).
+
+            ├── icon/ - Icones do site.
+            ├── img/ - Imagens do site.
+    
+        ├──components/ - Componetes da estrutura do site.
+
+            ├── layout/ - Componentes de layout.
+            ├── ui/ - Componentes genéricos.
+    
+        ├── pages/ - Páginas do site.
+
+    ├── public/ - Arquivos públicos.
