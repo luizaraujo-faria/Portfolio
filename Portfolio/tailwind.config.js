@@ -23,6 +23,7 @@ export default {
       animation: {
         'spin': 'spinbar .7s linear infinite',
         'float': 'floating 1s infinite alternate',
+        'slowfloat': 'floating 2s infinite alternate',
         'hoverfloat': 'hfloat .5s infinite alternate',
         'words': 'words 20s steps(10) infinite',
         'wordstwo': 'wordstwo 20s steps(10) infinite',
