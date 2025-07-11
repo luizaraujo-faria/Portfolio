@@ -12,7 +12,7 @@
   
   ├── Sessão "Sobre" - Apresentação pessoal, habilidades técnicas e curriculo( CV ).
   ├── Sessão "Portfólio" - ( Em desenvolvimento ).
-  ├── Sessão "Contato" - ( Em desenvolvimento ).
+  ├── Sessão "Contato" - Formulário para envio de email e links para redes sociais.
 
 # Técnologias
 
