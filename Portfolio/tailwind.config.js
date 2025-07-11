@@ -65,6 +65,7 @@ export default {
     },
   },
   plugins: [
+    require('tailwind-scrollbar'),
     function({ addComponents }) {
       addComponents({
         '.sections': {
@@ -74,7 +75,33 @@ export default {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center'
-        }
+        },
+        '.scrollbar': {
+          '&::-webkit-scrollbar': {
+            width: '10px',
+            height: '100%',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: '#ecce7a',
+            cursor: 'pointer',
+          },
+          '&::-webkit-scrollbar-track': {
+            backgroundColor: '#070707',
+          },
+        },
+        '.scrollbar-body': {
+          '&::-webkit-scrollbar': {
+            width: '10px',
+            height: '100%',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: '#ecce7a',
+            cursor: 'pointer',
+          },
+          '&::-webkit-scrollbar-track': {
+            backgroundColor: '#000000',
+          },
+        },
       })
     }
   ],
