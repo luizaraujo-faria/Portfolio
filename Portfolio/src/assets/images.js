@@ -13,25 +13,25 @@ import IlustracaoPC from './img/ilustracao.png';
 import Github from './icon/icon-git hub.png';
 import Linkedin from './icon/icon-linkedin.png';
 import Instagram from './icon/icon-instagram.png';
-import Foto from './img/Foto-Perfil.webp'
+import Foto from './img/Foto-Perfil.webp';
 
 const images = {
-    Logo,
-    IconJS,
-    IconTS,
-    IconReact,
-    IconTail,
-    IconHtml,
-    IconCss,
-    IconNode,
-    IconMySql,
-    IconGit,
-    IconCsharp,
-    IlustracaoPC,
-    Github,
-    Linkedin,
-    Instagram,
-    Foto
-}
+  Logo,
+  IconJS,
+  IconTS,
+  IconReact,
+  IconTail,
+  IconHtml,
+  IconCss,
+  IconNode,
+  IconMySql,
+  IconGit,
+  IconCsharp,
+  IlustracaoPC,
+  Github,
+  Linkedin,
+  Instagram,
+  Foto,
+};
 
 export default images;
