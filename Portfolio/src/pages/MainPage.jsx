@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from '../components/layout/Header';
 import AboutSection from '../components/ui/AboutSection';
+import PortfolioSection from '../components/ui/PortfolioSection';
 import MainBanner from '../components/ui/MainBanner';
 import ContactSection from '../components/ui/ContactSection';
 import Footer from '../components/layout/Footer';
@@ -24,6 +25,7 @@ const MainPage = () => {
       <main className="w-full flex items-center justify-start flex-col relative z-20">
         <MainBanner className='size-36 bottom-[-35%] md:bottom-[-45%] lg:bottom-[-50%]' />
         <AboutSection />
+        <PortfolioSection />
         <MainBanner className="hidden h-[60vh]" />
         <ContactSection />
       </main>

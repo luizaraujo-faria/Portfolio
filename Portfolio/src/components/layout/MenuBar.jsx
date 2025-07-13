@@ -21,7 +21,7 @@ const MenuBar = ({ scrolled, className }) => {
 
   return (
     <aside className={`w-full h-screen transition-all duration-300 fixed z-40 left-0 top-0 bg-black flex items-center justify-start flex-col gap-8 p-2 shadow-[1px_1px_10px_] shadow-[#0f0f0f75] md:w-2/4 lg:w-2/6 dark:bg-white ${className}`}>
-      <header className={`w-[95%] h-14 flex items center justify-end p-5 bg-quaternary shadow-[0px_2px_5px_] shadow-[#0f0f0f75] rounded-sm transition-all duration-300 ${scrolled ? 'mt-[4.5px] md:mt-0' : 'mt-5'} dark:bg-quintenary`}>
+      <header className={`w-[95%] h-14 flex items center justify-end p-5 bg-quaternary shadow-[0px_2px_5px_] shadow-[#0f0f0f27] rounded-sm transition-all duration-300 ${scrolled ? 'mt-[4.5px] md:mt-0' : 'mt-5'} dark:bg-quintenary`}>
         <div className="flex items-center gap-2">
           <h4 className="text-primary text-lg font-light dark:text-black">Tema:</h4>
 
@@ -39,7 +39,7 @@ const MenuBar = ({ scrolled, className }) => {
         </div>
       </header>
 
-      <nav className="w-[95%] h-3/5 flex items-center justify-start p-5 bg-quaternary shadow-[0px_3px_5px_] shadow-[#0f0f0f75] rounded-sm dark:bg-quintenary">
+      <nav className="w-[95%] h-3/5 flex items-center justify-start p-5 bg-quaternary shadow-[0px_3px_5px_] shadow-[#0f0f0f27] rounded-sm dark:bg-quintenary">
         <ul className="w-full text-xl text-white font-light flex flex-col gap-5 dark:text-black">
           <li>
             <Link to="/" className="flex items-center justify-start gap-5 group w-full h-8 hover:bg-black active:bg-black dark:hover:bg-white dark:active:bg-white">
