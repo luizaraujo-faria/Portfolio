@@ -9,7 +9,7 @@ const HomePage = () => {
       <main className="w-full flex items-center justify-start flex-col relative overflow-hidden">
         <HomeSection />
       </main>
-      <Footer />
+      <Footer className='dark:brightness-100'/>
     </>
   );
 };
