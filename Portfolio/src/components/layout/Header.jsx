@@ -21,7 +21,7 @@ const Header = ({ className }) => {
   }, []);
 
   return (
-    <header className={`w-full transition-all duration-300 ${scrolled ? 'h-12 bg-black shadow-[0px_0px_10px_] shadow-[#0f0f0f75] dark:bg-white' : 'h-28 bg-linear-to-t from-b to-95% to-black from-5% from-transparent '} fixed z-40 flex items-center justify-between p-10 lg:p-8 ${className}`}>
+    <header className={`w-full transition-all duration-300 ${scrolled ? 'h-12 bg-black shadow-[0px_0px_10px_] shadow-[#0f0f0f27] dark:bg-white' : 'h-28 bg-linear-to-t from-b to-95% to-black from-5% from-transparent '} fixed z-40 flex items-center justify-between p-10 lg:p-8 ${className}`}>
       <MenuBar scrolled={scrolled} className={`${menuStatus === 'active' ? 'translate-x-[0%]' : 'translate-x-[-125%]'}`} />
       <Overlay className={`${menuStatus === 'active' ? 'block z-30' : 'hidden -z-50'}`} />
 

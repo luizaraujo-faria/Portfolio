@@ -12,7 +12,7 @@
   
   ├── Sessão "Sobre" - Apresentação pessoal, habilidades técnicas e curriculo( CV ).
   ├── Sessão "Portfólio" - ( Em desenvolvimento ).
-  ├── Sessão "Contato" - Formulário para envio de email e links para redes sociais.
+  ├── Sessão "Contato" - Contato através de formulário para envio de email e links para redes sociais.
 
 # Técnologias
 
@@ -22,23 +22,29 @@
 - Git
 - Vite
 - ESLint
+- Prettier
+- Dotenv
 
 # Pastas
 
 - Portfolio/ - Pasta mãe.
-
+    |
     ├── src/ - Arquivos principais do projeto.
-
+        |  
         ├── assets/ - Arquivos de mídia (Imagens, icones, etc...).
-
+            |
             ├── icon/ - Icones do site.
             ├── img/ - Imagens do site.
-    
+        |
         ├──components/ - Componetes da estrutura do site.
-
+            |
             ├── layout/ - Componentes de layout.
             ├── ui/ - Componentes genéricos.
-    
+        |
         ├── pages/ - Páginas do site.
-
+            |
+            ├── HomePage.jsx - Página incial para receber usuários.
+            ├── MainPage.jsx - Página com conteúdo principal do site.
+            ├── ThanksPage.jsx - Página de agradecimentos ao usuário após a realização de contato.
+    |
     ├── public/ - Arquivos públicos.
