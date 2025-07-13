@@ -1,5 +1,5 @@
 import Logo from '../../public/Logo.svg';
-import IconJS from './icon/icon-js-cor.png';
+import IconJS from './icon/icon-js.png';
 import IconTS from './icon/icon-ts-cor.png';
 import IconReact from './icon/icon-react-cor.png';
 import IconTail from './icon/icon-tailwind-cor.png';

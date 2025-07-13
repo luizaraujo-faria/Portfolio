@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main className="w-full flex items-center justify-start flex-col relative">
+      <main className="w-full flex items-center justify-start flex-col relative overflow-hidden">
         <HomeSection />
       </main>
       <Footer />

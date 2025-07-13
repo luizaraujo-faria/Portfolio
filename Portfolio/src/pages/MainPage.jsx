@@ -22,12 +22,12 @@ const MainPage = () => {
     <>
       <Header />
       <main className="w-full flex items-center justify-start flex-col relative z-20">
-        <MainBanner />
+        <MainBanner className='size-36 bottom-[-35%] md:bottom-[-45%] lg:bottom-[-50%]' />
         <AboutSection />
         <MainBanner className="hidden h-[60vh]" />
         <ContactSection />
       </main>
-      <Footer className="relative bg-quaternary md:h-16 lg:h-20 dark:to-quintenary dark:from-quintenary" />
+      <Footer className="static bg-quaternary md:h-16 lg:h-20 dark:text-black dark:to-quintenary dark:from-quintenary dark:drop-shadow-[0px_-3px_10px_] dark:drop-shadow-[#0f0f0f75]" />
     </>
   );
 };
