@@ -74,8 +74,15 @@ const PortfolioSection = () => {
                 {/* <h4 className='text-2xl text-white font-light md:text-3xl dark:text-black'>{activeSection === 'projects' ? 'Projetos' : activeSection === 'certificates' ? 'Certificados' : 'Serviços'}</h4> */}
 
                 <div id="slider" className="max-w-full w-full lg:h-75 flex items-center justify-center gap-10 flex-nowrap transition-all duration-300">
-                    <div id='card' className={`w-full cursor-pointer md:w-3/6 ${activeSection === 'services' ? 'lg:w-4/6' : activeSection === 'projects' ? 'lg:w-3/6' : 'lg:w-2/6'} h-fit flex flex-col items-center justify-center gap-5 transition-all duration-300`}>
-                        <img src={_currentSlide.src} alt={_currentSlide.title} loading='lazy' className='w-full object-cover drop-shadow-[0px_0px_10px_] drop-shadow-[#0f0f0f27]' />
+                    <div id='card' className={`w-full cursor-pointer md:w-3/6 relative ${activeSection === 'services' ? 'lg:w-4/6' : activeSection === 'projects' ? 'lg:w-3/6' : 'lg:w-2/6'} h-fit flex flex-col items-center justify-center gap-5 transition-all duration-300`}>
+                        <div className='group'>
+                            <img src={_currentSlide.src} alt={_currentSlide.title} loading='lazy' className='w-full object-cover drop-shadow-[0px_0px_10px_] drop-shadow-[#0f0f0f27]' />
+                            <a href={_currentSlide.url} target='blank'  className='w-full h-6/7 flex items-center justify-center bg-[#0000005b] backdrop-blur-[1px] absolute top-0 z-20 transition-all duration-300 opacity-0 group-hover:opacity-100 group-active:opacity-100'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-12 text-primary">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                                </svg>
+                            </a>
+                        </div>
                         <h5 className='text-2xl text-primary text-center font-light dark:text-black'>{_currentSlide.title}</h5>
                     </div>
                     {/* {slides.map((slide) => (
@@ -87,13 +94,13 @@ const PortfolioSection = () => {
                 </div>
 
                 <div className="flex gap-15">
-                    <button id="back" onClick={prevSlide} className="cursor-pointer text-white size-8 hover:border-1 hover:border-primary rounded-full flex items-center justify-center p-2 transition-all duration-300 hover:size-10 hover:p-3 dark:text-black">
+                    <button id="back" onClick={prevSlide} className="cursor-pointer text-white size-8 hover:border-1 hover:border-primary rounded-full flex items-center justify-center p-2 transition-all duration-300 hover:p-2 dark:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </button>
 
-                    <button id="next" onClick={nextSlide} className="cursor-pointer text-white size-8 hover:border-1 hover:border-primary rounded-full flex items-center justify-center p-2 transition-all duration-300 hover:size-10 hover:p-3 dark:text-black">
+                    <button id="next" onClick={nextSlide} className="cursor-pointer text-white size-8 hover:border-1 hover:border-primary rounded-full flex items-center justify-center p-2 transition-all duration-300 hover:p-2 dark:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
@@ -101,10 +108,10 @@ const PortfolioSection = () => {
                 </div>
             </div>
 
-            <article id="content" className={`w-full h-full hidden lg:items-center lg:justify-around lg:flex-col ${activeSection === 'services' ? 'lg:flex lg:col-start-2' : 'lg:hidden'}`}>
+            <article id="content" className={`w-full h-full hidden lg:items-center lg:justify-start lg:gap-16 lg:flex-col ${activeSection === 'services' ? 'lg:flex lg:col-start-2' : 'lg:hidden'}`}>
                 <h4 className='text-3xl text-white font-light dark:text-black'>Serviçõs Oferecidos.</h4>
 
-                <ul className='flex flex-col items-center justify-center'>
+                <ul className='flex flex-col items-start justify-center'>
                     <li className='text-2xl text-primary font-light dark:text-black'>Desenvolvimento de sites.</li>
                     <ul className='text-white p-3 dark:text-quaternary'>
                         <li className='text-xl font-light'>- Landing Pages.</li>
@@ -112,11 +119,11 @@ const PortfolioSection = () => {
                         <li className='text-xl font-light'>- Aplicações maiores.</li>
                     </ul>
                     <li className='text-2xl text-primary font-light dark:text-black'>Desenvolvimento de Sistemas.</li>
-                    <ul className='text-white p-3 dark:text-quaternary'>
+                    {/* <ul className='text-white p-3 dark:text-quaternary'>
                         <li className='text-xl font-light'>- Aplicações web.</li>
                         <li className='text-xl font-light'>- Banco de dados.</li>
-                    </ul>
-                    <li className='text-2xl text-primary font-light dark:text-black'>Design Digital (UI/UX).</li>
+                    </ul> */}
+                    <li className='text-2xl text-primary font-light dark:text-black'>Design Digital.</li>
                     <ul className='text-white p-3 dark:text-quaternary'>
                         <li className='text-xl font-light'>- Identidade visual.</li>
                         <li className='text-xl font-light'>- Prototipação</li>
