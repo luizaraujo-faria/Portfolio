@@ -11,7 +11,7 @@
 - Página principal - contém todo o conteúdo principal do site, todas as informações sobre min.
   
   ├── Sessão "Sobre" - Apresentação pessoal, habilidades técnicas e curriculo( CV ).
-  ├── Sessão "Portfólio" - ( Em desenvolvimento ).
+  ├── Sessão "Portfólio" - Sessão dinâmica entre Projetos pessoais, certificações e serviços oferecidos.
   ├── Sessão "Contato" - Contato através de formulário para envio de email e links para redes sociais.
 
 # Técnologias
@@ -27,9 +27,7 @@
 
 # Pastas
 
-- Portfolio/ - Pasta mãe.
-    |
-    ├── src/ - Arquivos principais do projeto.
+- src/ - Arquivos principais do projeto.
         |  
         ├── assets/ - Arquivos de mídia (Imagens, icones, etc...).
             |
@@ -46,5 +44,5 @@
             ├── HomePage.jsx - Página incial para receber usuários.
             ├── MainPage.jsx - Página com conteúdo principal do site.
             ├── ThanksPage.jsx - Página de agradecimentos ao usuário após a realização de contato.
-    |
-    ├── public/ - Arquivos públicos.
+
+- public/ - Arquivos públicos.
