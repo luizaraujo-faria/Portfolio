@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const HomeSection = () => {
   return (
-    <section className="sections transition-all duration-300 bg-[url(../src/assets/img/Banner-LH.webp)] animate-background bg-center bg-cover bg-no-repeat before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-[#0000008c] before:backdrop-blur-[3px]">
+    <section className="sections transition-all duration-300 bg-[url(../src/assets/img/Banner-LH.webp)] lg:animate-background bg-center bg-cover bg-no-repeat before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-[#0000008c] before:backdrop-blur-[3px]">
       <article className="absolute bottom-2/5 z-10 flex items-center justify-center flex-col md:bottom-1/3">
         <h2 className="text-white text-2xl font-light md:text-3xl">
           <span className="text-secondary">Olá</span>, me chamo
