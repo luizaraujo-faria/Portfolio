@@ -28,21 +28,21 @@
 # Pastas
 
 - src/ - Arquivos principais do projeto.
-        |  
-        ├── assets/ - Arquivos de mídia (Imagens, icones, etc...).
-            |
-            ├── icon/ - Icones do site.
-            ├── img/ - Imagens do site.
-        |
-        ├──components/ - Componetes da estrutura do site.
-            |
-            ├── layout/ - Componentes de layout.
-            ├── ui/ - Componentes genéricos.
-        |
-        ├── pages/ - Páginas do site.
-            |
-            ├── HomePage.jsx - Página incial para receber usuários.
-            ├── MainPage.jsx - Página com conteúdo principal do site.
-            ├── ThanksPage.jsx - Página de agradecimentos ao usuário após a realização de contato.
+  
+    ├── assets/ - Arquivos de mídia (Imagens, icones, etc...).
+
+        ├── icon/ - Icones do site.
+        ├── img/ - Imagens do site.
+
+    ├──components/ - Componetes da estrutura do site.
+
+        ├── layout/ - Componentes de layout.
+        ├── ui/ - Componentes genéricos.
+
+    ├── pages/ - Páginas do site.
+            
+        ├── HomePage.jsx - Página incial para receber usuários.
+        ├── MainPage.jsx - Página com conteúdo principal do site.
+        ├── ThanksPage.jsx - Página de agradecimentos ao usuário após a realização de contato.
 
 - public/ - Arquivos públicos.

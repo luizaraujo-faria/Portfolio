@@ -19,7 +19,7 @@ const PortfolioSection = () => {
         setCurrentSlideIndex((prev) => (prev - 1 + slides.length ) % slides.length);
     };
 
-    return <section className="w-full h-[125vh] relative flex items-center justify-start flex-col gap-8 p-5 bg-black border-t-quaternary border-t-5 xl:h-[135vh] dark:border-t-quintenary dark:bg-white">
+    return <section id='portfolio' className="w-full h-[125vh] relative flex items-center justify-start flex-col gap-8 p-5 bg-black border-t-quaternary border-t-5 xl:h-[135vh] dark:border-t-quintenary dark:bg-white">
         <h3 className="text-4xl text-primary font-extralight lg:text-6xl dark:text-black">Portfólio</h3>
 
         <div className="w-full h-fit flex items-center justify-center flex-col gap-5 lg:flex-row">
