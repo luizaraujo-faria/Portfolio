@@ -1,5 +1,5 @@
 import images from '../../assets/images';
-import CV from '../../../download/CV-Luiz.pdf';
+import CV from '/CV-Luiz.pdf';
 
 const AboutSection = () => {
   return (
@@ -47,7 +47,7 @@ const AboutSection = () => {
         </div>
 
         <button className="w-full h-fit flex items-center justify-center md:w-3/6 lg:w-2/6">
-          <a href='../../../download/CV-Luiz.pdf' download={CV} className='w-full h-10 rounded-xs text-primary border-primary border-2 flex items-center justify-center gap-5 relative z-[2] before:content-[""] before:absolute before:z-[-1] before:bg-primary before:left-0 before:top-0 before:w-full before:h-full before:scale-x-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-x-[1] active:before:scale-x-[1] hover:text-black active:text-black md:h-14 lg:h-10 dark:text-black'>
+          <a href='/CV-Luiz.pdf' download={CV} className='w-full h-10 rounded-xs text-primary border-primary border-2 flex items-center justify-center gap-5 relative z-[2] before:content-[""] before:absolute before:z-[-1] before:bg-primary before:left-0 before:top-0 before:w-full before:h-full before:scale-x-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-x-[1] active:before:scale-x-[1] hover:text-black active:text-black md:h-14 lg:h-10 dark:text-black'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.35} stroke="currentColor" className="size-6  md:size-8 lg:size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
