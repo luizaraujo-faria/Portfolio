@@ -14,6 +14,10 @@ import Github from './icon/icon-git hub.png';
 import Linkedin from './icon/icon-linkedin.png';
 import Instagram from './icon/icon-instagram.png';
 import Foto from './img/Foto-Perfil.webp';
+import IconVSCode from './icon/icon-vscode-cor.png';
+import IconJava from './icon/icon-java-cor.png';
+import IconPostman from './icon/icon-postman-cor.png';
+import IconFigma from './icon/icon-figma-cor.png';
 
 const images = {
   Logo,
@@ -32,6 +36,10 @@ const images = {
   Linkedin,
   Instagram,
   Foto,
+  IconVSCode,
+  IconJava,
+  IconFigma,
+  IconPostman
 };
 
 export default images;
