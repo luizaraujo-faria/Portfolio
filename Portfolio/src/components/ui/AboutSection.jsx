@@ -2,7 +2,9 @@ import images from '../../assets/images';
 import CV from '/CV-Luiz.pdf';
 
 const AboutSection = () => {
-  return (
+
+  return(
+
     <section id="about" className="w-full h-[110vh] relative flex items-center justify-center flex-col gap-8 p-5 bg-black md:h-[120vh] lg:h-[165vh] lg:gap-20 lg:p-0 dark:bg-white">
       <div className="w-full h-fit grid grid-cols-1 gap-8 justify-items-start items-end lg:p-8 lg:mt-12">
         <article className="w-full h-fit mt-18 col-start-1 flex items-center justify-center flex-col gap-5 md:mt-32 lg:w-[90%] lg:items-start">
@@ -10,13 +12,13 @@ const AboutSection = () => {
 
           <div className="text-justify text-white font-light text-lg flex items-center justify-center flex-col gap-5 md:text-2xl lg:font-light dark:text-black">
             <p>
-              Me chamo <span className="text-primary dark:text-sextenary">Luiz Henrique</span>, tenho 17 anos e <span className="text-primary dark:text-sextenary">sou aluno</span> do segundo ano do curso de Desenvolvimento de Sistemas integrado ao ensino médio na <span className="text-primary dark:text-sextenary">Etec Basilides de Godoy</span>, onde desenvolvo e aplico{' '}
+              Me chamo <span className="text-primary dark:text-sextenary">Luiz Henrique</span>, tenho 17 anos e <span className="text-primary dark:text-sextenary">sou aluno</span> do terceiro ano do curso de Desenvolvimento de Sistemas integrado ao ensino médio na <span className="text-primary dark:text-sextenary">Etec Basilides de Godoy</span>, onde desenvolvo e aplico{' '}
               <span className="text-primary dark:text-sextenary">competências</span> como organização, <span className="text-primary dark:text-sextenary">trabalho em equipe</span> e <span className="text-primary dark:text-sextenary">proatividade</span>.
             </p>
 
             <p>
-              Atualmente sou desenvolvedor de <span className="text-primary dark:text-sextenary">software full-stack</span> iniciante, apesar de <span className="text-primary dark:text-sextenary">não possuir</span> experiência profissional, <span className="text-primary dark:text-sextenary">estudo</span> e{' '}
-              <span className="text-primary dark:text-sextenary">desenvolvo</span> projetos buscando me tornar um dev mais <span className="text-primary dark:text-sextenary">completo</span>.
+              Atualmente sou desenvolvedor de <span className="text-primary dark:text-sextenary">software full-stack</span>, e participo de uma <span className="text-primary dark:text-sextenary">Inciação Cientifica</span> em <span className="text-primary dark:text-sextenary">desenvolvimento técnológico</span> oferecida pela <span className="text-primary dark:text-sextenary">USP</span> na rede
+              <span className="text-primary dark:text-sextenary"> Lucy Montoro - IMREA HCFMUSP </span>.
             </p>
           </div>
         </article>
@@ -37,12 +39,13 @@ const AboutSection = () => {
             <img src={images.IconTS} className="size-11 p-1 animate-float [animation-delay:1.5s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-Typescript" loading="lazy" />
             <img src={images.IconReact} className="size-11 p-1 [animation:spin_4s_linear_infinite] [animation-delay:1.25s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-React.js" loading="lazy" />
             <img src={images.IconTail} className="size-11 p-1 animate-float [animation-delay:1s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-TailwindCSS" loading="lazy" />
-            <img src={images.IconHtml} className="size-11 p-1 animate-float [animation-delay:1.25s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-HTML" loading="lazy" />
-            <img src={images.IconCss} className="size-11 p-1 animate-float [animation-delay:1.5s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-CSS" loading="lazy" />
-            <img src={images.IconNode} className="size-11 p-1 animate-float [animation-delay:1.75s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-Node.js" loading="lazy" />
-            <img src={images.IconMySql} className="size-11 p-1 animate-float [animation-delay:1.35s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-MySQL" loading="lazy" />
+            <img src={images.IconVSCode} className="size-11 p-1 animate-float [animation-delay:1.25s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-HTML" loading="lazy" />
             <img src={images.IconGit} className="size-11 p-1 animate-float [animation-delay:1.15s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-Git" loading="lazy" />
+            <img src={images.IconPostman} className="size-11 p-1 animate-float [animation-delay:1.5s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-13" alt="Icone-CSS" loading="lazy" />
+            <img src={images.IconNode} className="size-11 p-1 animate-float [animation-delay:1.75s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-Node.js" loading="lazy" />
             <img src={images.IconCsharp} className="size-11 p-1 animate-float [animation-delay:1.35s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-Csharp" loading="lazy" />
+            <img src={images.IconJava} className="size-11 p-1 animate-float [animation-delay:1.25s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-15" alt="Icone-HTML" loading="lazy" />
+            <img src={images.IconMySql} className="size-11 p-1 animate-float [animation-delay:1.35s] transition-all duration-300 cursor-pointer drop-shadow-sm hover:drop-shadow-tertiary hover:scale-[1.15] active:drop-shadow-tertiary active:scale-[1.15] md:size-16 lg:size-14" alt="Icone-MySQL" loading="lazy" />
           </div>
         </div>
 
