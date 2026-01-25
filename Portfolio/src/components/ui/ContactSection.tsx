@@ -2,12 +2,13 @@ import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import images from '../../assets/images';
+import SocialIcons from './SocialIcons';
 
 const ContactSection = () => {
 
   const navigate = useNavigate();
-  const form = useRef();
-  const [status, setStatus] = useState('idle');
+  const form = useRef(null);
+  const [status, setStatus] = useState<string>('idle');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -75,17 +76,7 @@ const ContactSection = () => {
         </button>
       </form>
 
-      <div className="flex gap-1 p-5 md:gap-0 dark:brightness-0">
-        <a href="https://github.com/luizaraujo-faria" target="blank">
-          <img src={images.Github} className="size-7 transition-all duration-300 [animation-delay:1s] animate-float hover:translate-y-[-4px]" alt="Icone GitHub" loading="lazy" />
-        </a>
-        <a href="https://www.linkedin.com/in/luizaraujo-tech/" target="blank">
-          <img src={images.Linkedin} className="size-7 transition-all duration-300 [animation-delay:1.25s] animate-float hover:translate-y-[-4px]" alt="Icone LinkedIn" loading="lazy" />
-        </a>
-        <a href="https://www.instagram.com/araujol.web/" target="blank">
-          <img src={images.Instagram} className="size-7 transition-all duration-300 [animation-delay:1.5s] animate-float hover:translate-y-[-4px]" alt="Icone Instagram" loading="lazy" />
-        </a>
-      </div>
+      <SocialIcons scrolled />
     </section>
   );
 };

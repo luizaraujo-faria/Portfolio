@@ -1,12 +1,12 @@
-import { useState, _useEffect } from 'react';
+import { useState } from 'react';
 import { projects } from '../../data/projects';
 import { services } from '../../data/services';
 import { certificates } from '../../data/certificates';
 
 const PortfolioSection = () => {
 
-    const [activeSection, setActiveSection] = useState('projects');
-    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+    const [activeSection, setActiveSection] = useState<string>('projects');
+    const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
     const contents = { projects, certificates, services };
     const slides = contents[activeSection];
     const _currentSlide = slides[currentSlideIndex];

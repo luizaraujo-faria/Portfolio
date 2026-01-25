@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import MyPhoto from '../components/ui/MyPhoyo';
 import images from '../assets/images';
+import SocialIcons from '../components/ui/SocialIcons';
 
 const ThanksPage = () => {
 
@@ -16,17 +17,7 @@ const ThanksPage = () => {
 
             <img src={images.Logo} className='size-20 brightness-0 md:size-24 md:ml-10' alt="Logotipo-Luiz" loading="lazy" />
 
-            <div className='hidden gap-1 brightness-0 md:gap-0 md:flex'>
-                <a href="https://github.com/luizaraujo-faria" target="blank">
-                    <img src={images.Github} className="size-6 transition-all duration-300 [animation-delay:1s] animate-float hover:translate-y-[-4px]" alt="Icone GitHub" loading="lazy" />
-                </a>
-                <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/" target="blank">
-                    <img src={images.Linkedin} className="size-6 transition-all duration-300 [animation-delay:1.25s] animate-float hover:translate-y-[-4px]" alt="Icone LinkedIn" loading="lazy" />
-                </a>
-                <a href="https://www.instagram.com/araujol.web/" target="blank">
-                    <img src={images.Instagram} className="size-6 transition-all duration-300 [animation-delay:1.5s] animate-float hover:translate-y-[-4px]" alt="Icone Instagram" loading="lazy" />
-                </a>
-            </div>
+            <SocialIcons className='brightness-0'/>
         </header>
         <main className="w-full h-screen bg-black flex items-center justify-center flex-col relative dark:bg-white">
 

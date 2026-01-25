@@ -1,4 +1,12 @@
-export const certificates = [
+type CertificatesType = {
+    Id: number;
+    title: string;
+    src: string;
+    url: string;
+    desc: string;
+}
+
+export const certificates: CertificatesType[] = [
     { Id: 1, title: 'Versionamento Com Git', src: '/C-Git.webp', url: 'https://drive.google.com/file/d/1tftnsjoUEHWlxjO2cWInTwHHQrXYNann/view', desc: ''},
     { Id: 2, title: 'Design P/ Quem Não É Design', src: '/C-Design.webp', url: 'https://drive.google.com/file/d/1j0xhhRrQk2dif_z3o0gak3U_AEF6w26Z/view', desc: ''},
     { Id: 3, title: 'Fundamentos do Node', src: '/C-Node.webp', url: 'https://drive.google.com/file/d/1ycihLaBfG8Vk6VxJLls8NnDw0PP4gtSB/view', desc: ''},

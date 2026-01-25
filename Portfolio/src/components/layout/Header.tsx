@@ -2,10 +2,15 @@ import { useEffect, useState } from 'react';
 import MenuBar from './MenuBar';
 import Overlay from './Overlay';
 import images from '../../assets/images';
+import SocialIcons from '../ui/SocialIcons';
 
-const Header = ({ className }) => {
-  const [menuStatus, setMenuStatus] = useState('inactive');
-  const [scrolled, setScrolled] = useState(false);
+interface HeaderProps {
+  className?: string;
+}
+
+const Header = ({ className }: HeaderProps) => {
+  const [menuStatus, setMenuStatus] = useState<string>('inactive');
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   const html = document.documentElement;
   menuStatus === 'active' ? html.classList.add('overflow-hidden') : html.classList.remove('overflow-hidden');
@@ -34,17 +39,7 @@ const Header = ({ className }) => {
 
       <img src={images.Logo} className={`size-20 md:size-24 md:ml-10 ${scrolled ? 'dark:brightness-0' : ''}`} alt="Logotipo-Luiz" loading="lazy" />
 
-      <div className={`hidden ${scrolled ? 'dark:brightness-0' : 'dark:brightness-110'} gap-1 md:gap-0 md:flex`}>
-        <a href="https://github.com/luizaraujo-faria" target="blank">
-          <img src={images.Github} className="size-6 transition-all duration-300 [animation-delay:1s] animate-float hover:translate-y-[-4px]" alt="Icone GitHub" loading="lazy" />
-        </a>
-        <a href="https://www.linkedin.com/in/luizaraujo-tech/" target="blank">
-          <img src={images.Linkedin} className="size-6 transition-all duration-300 [animation-delay:1.25s] animate-float hover:translate-y-[-4px]" alt="Icone LinkedIn" loading="lazy" />
-        </a>
-        <a href="https://www.instagram.com/araujol.web/" target="blank">
-          <img src={images.Instagram} className="size-6 transition-all duration-300 [animation-delay:1.5s] animate-float hover:translate-y-[-4px]" alt="Icone Instagram" loading="lazy" />
-        </a>
-      </div>
+      <SocialIcons scrolled={scrolled} />
     </header>
   );
 };

@@ -18,6 +18,7 @@ import IconVSCode from './icon/icon-vscode-cor.png';
 import IconJava from './icon/icon-java-cor.png';
 import IconPostman from './icon/icon-postman-cor.png';
 import IconFigma from './icon/icon-figma-cor.png';
+import IconNest from './icon/icon-nest-cor.png';
 
 const images = {
   Logo,
@@ -39,7 +40,8 @@ const images = {
   IconVSCode,
   IconJava,
   IconFigma,
-  IconPostman
+  IconPostman,
+  IconNest,
 };
 
 export default images;

@@ -1,6 +1,10 @@
 import images from '../../assets/images';
 
-const Footer = ({ className }) => {
+interface FooterProps {
+  className?: string;
+}
+
+const Footer = ({ className }: FooterProps) => {
   return (
     <footer className={`w-full h-18 fixed bottom-0 z-30 bg-linear-to-b from-t to-95% to-[#000000] from-transparent flex items-center justify-center md:h-10 md:justify-center ${className}`}>
       <div className="flex items-center">
