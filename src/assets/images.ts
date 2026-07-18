@@ -1,0 +1,55 @@
+import Logo from '../../public/Logo.svg';
+import IconJS from './icon/icon-js.png';
+import IconTS from './icon/icon-ts-cor.png';
+import IconReact from './icon/icon-react-cor.png';
+import IconTail from './icon/icon-tailwind-cor.png';
+import IconHtml from './icon/icon-html-cor.png';
+import IconCss from './icon/icon-css-cor.png';
+import IconNode from './icon/icon-node-cor.png';
+import IconMySql from './icon/icon-mysql-cor.png';
+import IconGit from './icon/icon-git-cor.png';
+import IconCsharp from './icon/icon-csharp-cor.png';
+import IlustracaoPC from './img/ilustracao.png';
+import Github from './icon/icon-git hub.png';
+import Linkedin from './icon/icon-linkedin.png';
+import Instagram from './icon/icon-instagram.png';
+import Foto from './img/Foto-Perfil.webp';
+import IconVSCode from './icon/icon-vscode-cor.png';
+import IconJava from './icon/icon-java-cor.png';
+import IconPostman from './icon/icon-postman-cor.png';
+import IconFigma from './icon/icon-figma-cor.png';
+import IconNest from './icon/icon-nest-cor.png';
+import IconDocker from './icon/icon-docker-cor.png';
+import IconLinux from './icon/icon-linux-cor.png';
+import IconArduino from './icon/icon-arduino-cor.png';
+import IconCpp from './icon/icon-cpp-cor.png';
+
+const images = {
+  Logo,
+  IconJS,
+  IconTS,
+  IconReact,
+  IconTail,
+  IconHtml,
+  IconCss,
+  IconNode,
+  IconMySql,
+  IconGit,
+  IconCsharp,
+  IlustracaoPC,
+  Github,
+  Linkedin,
+  Instagram,
+  Foto,
+  IconVSCode,
+  IconJava,
+  IconFigma,
+  IconPostman,
+  IconNest,
+  IconDocker,
+  IconLinux,
+  IconArduino,
+  IconCpp
+};
+
+export default images;
